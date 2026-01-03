@@ -153,7 +153,7 @@ class ProxyTui(App):
                     yield Label(" Privacy Mode (hide full URLs in logs)")
         
         with Container(classes="main"):
-            yield Label("📋 Traffic Logs (Select text, Ctrl+C to copy)")
+            yield Label(" Traffic Logs (Select text, Ctrl+C to copy)")
             yield TextArea(id="logs", read_only=True, show_line_numbers=False)
         
         yield Footer()
