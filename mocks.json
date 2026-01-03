@@ -1,0 +1,34 @@
+[
+    {
+        "pattern": "api\\.example\\.com/users",
+        "response": {
+            "status": 200,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body": {
+                "users": [
+                    {
+                        "id": 1,
+                        "name": "Alice"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Bob"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "pattern": "httpbin\\.org/delay",
+        "response": {
+            "status": 200,
+            "headers": {},
+            "body": {
+                "mocked": true,
+                "instant": true
+            }
+        }
+    }
+]
